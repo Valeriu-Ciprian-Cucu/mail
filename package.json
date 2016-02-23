@@ -1,6 +1,6 @@
 {
   "name": "mail",
-  "description": "demo mail",
+  "description": "mail client built with Vue",
   "author": "Valeriu Ciprian <valeriu.ciprian.cucu@gmail.com>",
   "private": true,
   "scripts": {
