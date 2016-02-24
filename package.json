@@ -3,12 +3,16 @@
   "description": "mail client built with Vue",
   "author": "Valeriu Ciprian <valeriu.ciprian.cucu@gmail.com>",
   "scripts": {
-
+    "watch": "watch 'npm run build' ./src",
+    "build": "browserify -t [ stringify --extensions [.html] ] -e src/main.js -o dist/bundle.js && lessc ./src/less/main.less ./dist/style.css"
   },
   "dependencies": {
     "vue": "^1.0.0"
   },
   "devDependencies": {
-    
+    "browserify": "^13.0.0",
+    "less": "^2.6.0",
+    "stringify": "^4.0.1",
+    "watch": "^0.17.1"
   }
 }
